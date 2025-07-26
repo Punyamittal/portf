@@ -20,6 +20,9 @@ const LetterGlitch = dynamic(() => import("@/components/ui/letter-glitch"), {
   ),
 });
 
+// Ensure component is only rendered on client
+const isClient = typeof window !== 'undefined';
+
 function MainPage() {
   const { theme } = useTheme();
   const isLight = theme === "light";
@@ -34,13 +37,15 @@ function MainPage() {
       <SmoothScroll>
         <main className={cn("bg-slate-100 dark:bg-transparent")}>
           <div className="top-0 z-0 fixed w-full h-screen">
-            <LetterGlitch
-              glitchColors={glitchColors}
-              glitchSpeed={50}
-              centerVignette={true}
-              outerVignette={false}
-              smooth={true}
-            />
+            {isClient && (
+              <LetterGlitch
+                glitchColors={glitchColors}
+                glitchSpeed={50}
+                centerVignette={true}
+                outerVignette={false}
+                smooth={true}
+              />
+            )}
           </div>
           <div className="top-0 z-15 fixed w-full h-screen">
             <AnimatedBackground />
