@@ -376,9 +376,9 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Led the complete frontend and backend development for VoiceIT's official platform, featuring 
+            Led the complete frontend and backend development for VoiceIT&apos;s official platform, featuring 
             dynamic forms, resource sharing capabilities, and comprehensive member management tools. 
-            The platform serves as the central hub for VoiceIT's community and operations.
+            The platform serves as the central hub for VoiceIT&apos;s community and operations.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           
@@ -557,7 +557,7 @@ const projects: Project[] = [
           <TypographyH3 className="my-4 mt-8">🎨 Interactive 3D Elements</TypographyH3>
           <p className="font-mono mb-2">
             Experience the 3D keyboard modal that brings skills to life! This interactive keyboard is rendered 
-            in 3D on a webpage, and pressing each keycap reveals a skill in an engaging way. It's like typing, 
+            in 3D on a webpage, and pressing each keycap reveals a skill in an engaging way. It&apos;s like typing, 
             but transformed into an artistic experience.
           </p>
           
@@ -574,7 +574,7 @@ const projects: Project[] = [
           </p>
           
           <p className="font-mono mb-2 mt-8 text-center">
-            This isn't just a portfolio — it's a complete digital experience that showcases modern web development 
+            This isn&apos;t just a portfolio — it&apos;s a complete digital experience that showcases modern web development 
             at its finest.
           </p>
         </div>
